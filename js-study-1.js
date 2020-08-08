@@ -1,14 +1,7 @@
 // task1
 function sumTo(n) {
-    let sum = 0;
-
-    if (n > 1) {
-        for (let i = 1; i <= n; i++) sum += i;
-    } else {
-        for (let i = 1; i >= n; i--) sum += i;
-    }
-
-    return sum;
+    let sum = Math.abs(n) * (Math.abs(n) + 1) / 2;
+    return n < 0 ? sum * -1 : n > 0 ? sum : 1;
 }
 
 // task2
