@@ -1,4 +1,6 @@
 // task1
+// Ебать, эт че?)
+// Можно же через цикл фор или рекурсию сделать)
 function sumTo(n) {
     let sum = Math.abs(n) * (Math.abs(n) + 1) / 2;
     return n < 0 ? sum * -1 : n > 0 ? sum : 1;
@@ -12,6 +14,8 @@ for (let i = 0; i < 5; i++) {
 }
 
 // task3
+// Ну нее, ты чет себе прям жизнь усложняешь
+// Почитай про встроенные функции js: split, join и т.д.
 function reverseString(str) {
     let result = "";
     for (let i = str.length - 1; i >= 0; i--) result += str[i];
@@ -30,6 +34,7 @@ function mul(x, y) {
 }
 
 // task5
+// тоже самое, почитай про функции для работы с массивом.
 function isPalindrome(str) {
     // знаки препинания и пробелы не удаляю, т.к. функция проверяет только слова, а не предложения
     let string = str.toLowerCase();
@@ -42,6 +47,7 @@ function isPalindrome(str) {
 }
 
 // task6
+// В принципе норм, но не читаемо.
 function isAnagram(str1, str2) {
     if (str1.length !== str2.length) return false;
     let str2Arr = str2.toLowerCase().split('').sort();
@@ -59,3 +65,8 @@ function fibonacci(n) {
     }
     return next;
 }
+
+/* 
+    Тебе нужно почитать про кодстайл, изучить методы работы с массивами, стрингами и т.д.
+    
+*/
